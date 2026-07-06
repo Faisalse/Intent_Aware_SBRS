@@ -6,7 +6,7 @@
 <body>
 <h2>Intent Aware Recommender Systems</h2>
 <p align="center">
-  <img src="intentAware.webp" width="300", title="Intent Aware Recommender Systems">
+  <img src="intentAware.png" width="500", title="Intent Aware Recommender Systems">
   
 </p>
 
@@ -20,15 +20,10 @@
 <h5>Selected articles</h5>
 
 <ul>
-<li> Modeling Multi-Purpose Sessions for Next-Item Recommendations via Mixture-Channel Purpose Routing Networks (JCAI'19)</li> 
-<li>Disentangled Graph Collaborative Filtering (SIGIR'2020)</li>
-<li>Learning Intents behind Interactions with Knowledge Graph for Recommendation (WWW'2021) </li>
-<li> Intent Contrastive Learning for Sequential Recommendation (WWW'22)</li>
+<li>Modeling Multi-Purpose Sessions for Next-Item Recommendations via Mixture-Channel Purpose Routing Networks (JCAI'19)</li> 
 <li>Enhancing Hypergraph Neural Networks with Intent Disentanglement for Session-based Recommendation (SIGIR'2022)</li>
 <li>Dynamic Intent Aware Iterative Denoising Network for Session-based Recommendation (Journal: Information Processing & Management'2022 - IF: 7.4)</li> 
-<li>Intent Disentanglement and Feature Self-Supervision for Novel Recommendation (Journal: IEEE Transactions on Knowledge and Data Engineering'2022 - IF: 8.9) </li>
-<li>Efficiently Leveraging Multi-level User Intent for Session-based Recommendation via Atten-Mixer Network (WSDM'23)</li>
-<li>Sparse-Interest Network for Sequential Recommendation (WSDM'23)</li>  
+<li>Efficiently Leveraging Multi-level User Intent for Session-based Recommendation via Atten-Mixer Network (WSDM'23)</li> 
 </ul>
 
 
@@ -93,7 +88,7 @@
 <h2>Instructions to Run Experiments for Intent Aware and Non-intent Aware Recommender Systems</h2>
 
 
-<h5> Dynamic Intent-aware Iterative Denoising Network for Session-based Recommendation (DIDN)</h5>
+<h5>Dynamic Intent-aware Iterative Denoising Network for Session-based Recommendation (DIDN)</h5>
 <ul>
 <li>Download <a href="https://drive.google.com/drive/folders/1GocLZfbuwtxUjdRVEKq9xONyDbOjoNm4?usp=sharing" target="_blank">Yoochoose</a> dataset, unzip it and put the "yoochoose-clicks.dat" file into the "data" directory/folder </li>
 <li>Run this command to reproduce the experiments for the DIDN and baseline models on the shorter version of the Yoochoose dataset: <code>python run_experiments_for_DIDN_baseline_models.py --dataset yoochoose1_64</code> and run the following command to create the experiments for the larger version of the Yoochoose dataset <code>python run_experiments_for_DIDN_baseline_models.py --dataset yoochoose1_4</code>  </li>
@@ -134,50 +129,10 @@
 
 
 
- 
-
-<h5>Learning Intents behind Interactions with Knowledge Graph for Recommendation (KIGN)</h5>
-<ul>
-<li>Run this command to reproduce the experiments for the KGIN and baseline models on the lastFm dataset: <code>python run_experiments_for_KGIN_baselines_algorithms.py --dataset lastFm</code>  </li>
-<li>Run this command to reproduce the experiments for the KGIN and baseline models on the alibabaFashion dataset: <code>python run_experiments_for_KGIN_baselines_algorithms.py --dataset alibabaFashion</code>  </li>
-<li>Run this command to reproduce the experiments for the KGIN and baseline models on the amazonBook dataset: <code>python run_experiments_for_KGIN_baselines_algorithms.py --dataset amazonBook</code>  </li>
-</ul>
 
 
 
-<h5>Intent Disentanglement and Feature Self-supervision for Novel Recommendation (IDSNR)</h5>
-<ul>
-<li>Run this command to reproduce the experiments for the IDS4NR_NCF and baseline models on the MovieLens dataset: <code>python run_experiments_IDS4NR_baselines_algorithms.py --dataset MovieLens --model NCF</code>  </li>
-<li>Run this command to reproduce the experiments for the IDS4NR_NCF and baseline models on the Beauty dataset: <code>python run_experiments_IDS4NR_baselines_algorithms.py --dataset Beauty --model NCF</code>  </li>
-<li>Run this command to reproduce the experiments for the IDS4NR_NCF and baseline models on the Music dataset: <code>python run_experiments_IDS4NR_baselines_algorithms.py --dataset Music --model NCF</code>  </li>
-<li>Run this command to reproduce the experiments for the IDS4NR_LFM and baseline models on the MovieLens dataset: <code>python run_experiments_IDS4NR_baselines_algorithms.py --dataset MovieLens --model LFM</code>  </li>
-<li>Run this command to reproduce the experiments for the IDS4NR_LFM and baseline models on the Beauty dataset: <code>python run_experiments_IDS4NR_baselines_algorithms.py --dataset Beauty --model LFM</code>  </li>
-<li>Run this command to reproduce the experiments for the IDS4NR_LFM and baseline models on the Music dataset: <code>python run_experiments_IDS4NR_baselines_algorithms.py --dataset Music --model LFM</code>  </li>
-</ul>
 
-
-
-<h5>Disentangled Graph Collaborative Filtering (DGCF)</h5>
-<ul>
-<li>Run this command to reproduce the experiments for the DGCF on the Yelp2018 dataset: <code>python run_experiments_for_DGCF_algorithm.py --dataset yelp2018</code>  </li>
-<li>Run this command to reproduce the experiments for the baseline models on the Yelp2018 dataset: <code>python run_experiments_DGCF_baseline_algorithms.py --dataset yelp2018</code>  </li>
-<li>Run this command to reproduce the experiments for the DGCF on the Gowalla dataset: <code>python run_experiments_for_DGCF_algorithm.py --dataset gowalla</code>  </li>
-<li>Run this command to reproduce the experiments for the baseline models on the Gowalla dataset: <code>python run_experiments_DGCF_baseline_algorithms.py --dataset gowalla</code>  </li>
-<li>Run this command to reproduce the experiments for the DGCF on the Amazon-book dataset: <code>python run_experiments_for_DGCF_algorithm.py --dataset amazonbook</code>  </li>
-<li>Run this command to reproduce the experiments for the baseline models on the Amazon-book dataset: <code>python run_experiments_DGCF_baseline_algorithms.py --dataset amazonbook</code>  </li>
-
-<h5>Note: The DGCF was implemented using TensorFlow 1.14, which does not support current versions of Python. Therefore, we provide a separate installation guide to run the experiments for DGCF model</h5>
-
-<h5>Using Anaconda</h5>
-  <ul>
-    <li>Download Anaconda from <a href="https://www.anaconda.com/">https://www.anaconda.com/</a> and install it</li>
-    <li>Clone the GitHub repository by using this link: <code>https://github.com/Faisalse/IntentAwareRS.git</code></li>
-    <li>Open the Anaconda command prompt</li>
-    <li>Move into the <b>IntentAwareRS</b> directory</li>
-    <li>Run this command to create virtual environment: <code>conda create --name DGCF_env python=3.6</code></li>
-    <li>Run this command to activate the virtual environment: <code>conda activate DGCF_env</code></li>
-    <li>Run this command to install the required libraries for CPU: <code>pip install -r requirements_dgcf.txt</code></li>
-  </ul>
 
 </body>
 </html>  
