@@ -6,7 +6,7 @@
 <body>
 <h2>Intent Aware Recommender Systems</h2>
 <p align="center">
-  <img src="intentAware.png" width="500", title="Intent Aware Recommender Systems">
+  <img src="intentAware.png" width="700", title="Intent Aware Recommender Systems">
   
 </p>
 
