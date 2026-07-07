@@ -4,7 +4,7 @@
 
 </head>
 <body>
-<h2>Intent Aware Recommender Systems</h2>
+<h2>Intent Aware Session-based Recommender Systems</h2>
 <p align="center">
   <img src="intentAware.png" width="700", title="Intent Aware Recommender Systems">
   
@@ -12,7 +12,7 @@
 
 
 <h3>Introduction</h3>
-<p align="justify">This reproducibility package was prepared for the paper titled "Performance Comparison of Intent Aware and Non-Intent Aware Recommender Systems" and submitted to the ABC.  The results reported in this paper were achieved with the help of the codes, which were shared by the original authors of the selected articles. For the implementation of baseline models, we utilized the <a href="https://rn5l.github.io/session-rec/index.html" target="_blank">session-rec framework</a>. The framework include the state-of-the-art baseline models for session-based recommender systems. </p>
+<p align="justify">This reproducibility package was prepared for the paper titled "Performance Comparison of Intent Aware and Non-Intent Aware Recommender Systems" and submitted to the ABC.  The results reported in this paper were achieved with the help of the codes, which were shared by the original authors of the selected articles. For the implementation of baseline models, we utilized the <a href="https://rn5l.github.io/session-rec/index.html" target="_blank">session-rec framework</a>. The framework include the state-of-the-art baseline models for session-based recommender systems. For the uploaded picture, the credit goes to Gemini.</p>
 
 
 <h5>Selected articles</h5>
